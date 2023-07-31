@@ -1,20 +1,18 @@
 import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 
 function Navbar() {
-  return (
-    <>
-    <nav className='navbar'>
-    <div className='navbar-container'>
-    <Link to="/" className="navbar-logo">
-    <a href="https://digital.ihg.com/is/image/ihg/Kimpton-destination-Seattle_2880x848">
-    </a>
-    </Link>
-    </div>
-        </nav>
-    </>
-  )
-}
+    return (
+      <nav className='navbar'>
+        <div className='navbar-container'>
+          <Link to="/" className="navbar-logo">
+          <i class="fa-solid fa-plane"></i>
+          </Link>
+        </div>
+      </nav>
+    );
+  }
 
 export default Navbar
