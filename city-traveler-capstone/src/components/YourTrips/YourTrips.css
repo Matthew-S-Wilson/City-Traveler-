@@ -1,0 +1,10 @@
+.trips-list-container {
+    border: 1px solid #000000;
+    padding: 20px; 
+    background-color: rgb(75, 116, 116);
+}
+
+.trips-list {
+    list-style: none;
+    padding: 0;
+}

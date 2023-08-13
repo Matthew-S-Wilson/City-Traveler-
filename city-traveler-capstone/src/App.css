@@ -1,0 +1,43 @@
+.DropdownButton {
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 5px;
+    width: max-content;
+  
+  }
+  
+  .noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  
+  }
+
+  .DropdownElement {
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    padding: 5px;
+    width: max-content;
+  }
+
+.app-container {
+    position: relative;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/src/NYC-Night.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}

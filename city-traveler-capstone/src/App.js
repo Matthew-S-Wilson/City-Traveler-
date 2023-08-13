@@ -1,42 +1,84 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Login } from './Login/Login.js';
+import { ApplicationViews } from './views/ApplicationViews.js';
+import { Authorized } from './views/SignedIn.js';
+import "./App.css"
+import { List } from './components/SearchPage/DropdownList.js';
+import { Navbar } from './components/Navbar.js';
+import { Register } from './Login/Register.js';
+import { PlanItinerary } from './components/ItineraryPage/Itinerary.js';
+import { YourTrips } from './components/YourTrips/YourTrips.js';
 
-function Navbar() {
+
+
+
+export const App = () => {
   return (
-    <>
-      <nav className='navbar'>
-        <div className='navbar-container'>
-        <h1>City Traveler</h1>
-          <Link to="/" className="navbar-logo">
-          <i class="fa-solid fa-plane"></i>
-          </Link>
-        </div>
-      </nav>
-    </>
-  );
-}
-
-function App() {
-  return (    
-    <Router>
-      <Navbar />
+    <div className="app-container">
+      <div className="background-image"></div>
       <Routes>
-        <Route exact path="/" />
-        {/* Add other routes as needed */}
+
+        <Route
+          path="*"
+          element={
+
+            <>
+              <Navbar />
+
+              <Login />
+              <ApplicationViews />
+            </>
+          }
+        />
+        <Route
+          path="/register"
+          element={
+
+            <>
+              <Navbar />
+              <Register />
+            </>
+
+          }
+        />
+        <Route
+          path="/pick-city/*"
+          element={
+            <Authorized>
+              <>
+                <Navbar />
+                <ApplicationViews />
+                <List />
+              </>
+            </Authorized>
+          }
+        />
+        <Route
+          path="/plan-itinerary/:cityId"
+          element={
+            <Authorized>
+              <>
+                <Navbar />
+                <PlanItinerary userId={JSON.parse(localStorage.getItem("city_traveler_user")).id} />
+              </>
+            </Authorized>
+          }
+        />
+        <Route
+          path="/your-trips"
+          element={
+            <Authorized>
+              <>
+                <Navbar />
+                <YourTrips loggedInUserId={JSON.parse(localStorage.getItem("city_traveler_user")).id} />
+              </>
+            </Authorized>
+          }
+        />
+
       </Routes>
-    </Router>
+    </div>
   );
-}
-
-export default App;
-
-/*
-function App() {
-  return (    
-<div className='App'>
-  <h1>Yo</h1>
-</div>
-  );
-}
-*/
+};
 

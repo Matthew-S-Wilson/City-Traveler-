@@ -1,0 +1,60 @@
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1200px;
+    margin-left: 66px;
+}
+
+.navbar h1 {
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+
+}
+
+.navbar-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    padding-right:  85px;
+    padding-left: 25px;
+
+}
+
+.icon-menu {
+    display: flex;
+    align-items: center;
+}
+
+.register-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .logout-button,
+  .your-trips-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 20px;
+  }
