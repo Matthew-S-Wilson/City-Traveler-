@@ -54,7 +54,7 @@ export const Navbar = () => {
                   to="/your-trips"
                   onClick={() => navigate("/your-trips")}
                 >
-                  <button className="your-trips-button">Your Trips</button>
+                  <button className="your-trips-button" >Your Trips</button>
                 </Link>
               </li>
             </>

@@ -81,6 +81,7 @@ export const YourTrips = ({ loggedInUserId }) => {
                 setTrips(prevTrips =>
                     prevTrips.filter(trip => trip.id !== tripId)
                 );
+                
             });
     };
 

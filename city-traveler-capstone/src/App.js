@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Login } from './Login/Login.js';
-import { ApplicationViews } from './views/ApplicationViews.js';
 import { Authorized } from './views/SignedIn.js';
 import "./App.css"
 import { List } from './components/SearchPage/DropdownList.js';
@@ -14,6 +13,7 @@ import { YourTrips } from './components/YourTrips/YourTrips.js';
 
 
 export const App = () => {
+  const loggedInUserId = JSON.parse(localStorage.getItem("city_traveler_user"))?.id;
   return (
     <div className="app-container">
       <div className="background-image"></div>
@@ -25,9 +25,8 @@ export const App = () => {
 
             <>
               <Navbar />
-
               <Login />
-              <ApplicationViews />
+
             </>
           }
         />
@@ -48,7 +47,6 @@ export const App = () => {
             <Authorized>
               <>
                 <Navbar />
-                <ApplicationViews />
                 <List />
               </>
             </Authorized>
@@ -60,7 +58,7 @@ export const App = () => {
             <Authorized>
               <>
                 <Navbar />
-                <PlanItinerary userId={JSON.parse(localStorage.getItem("city_traveler_user")).id} />
+                <PlanItinerary userId={loggedInUserId} />
               </>
             </Authorized>
           }
@@ -71,14 +69,12 @@ export const App = () => {
             <Authorized>
               <>
                 <Navbar />
-                <YourTrips loggedInUserId={JSON.parse(localStorage.getItem("city_traveler_user")).id} />
+                <YourTrips loggedInUserId={loggedInUserId} />
               </>
             </Authorized>
           }
         />
-
       </Routes>
     </div>
   );
 };
-
