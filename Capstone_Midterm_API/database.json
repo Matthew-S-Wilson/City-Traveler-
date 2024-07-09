@@ -1,0 +1,274 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Verner Zeigler",
+      "email": "Vzieg@gmail.com",
+      "password": 12345
+    },
+    {
+      "id": 2,
+      "name": "Art Vandelay",
+      "email": "rtV33@nyc.gov",
+      "password": 12345
+    },
+    {
+      "id": 3,
+      "name": "Toby Flenderson ",
+      "email": "TobFlen@yahoo.com",
+      "password": 12345
+    },
+    {
+      "id": 4,
+      "name": "Joe Jordan",
+      "email": "jjordan53@gmail.com",
+      "password": 12345
+    },
+    {
+      "id": 5,
+      "name": "Tim Scott",
+      "email": "ts7853@yahoo.com",
+      "password": 12345
+    },
+    {
+      "id": 6,
+      "name": "Matt W",
+      "email": "matthew255@gmail.com",
+      "password": 12345
+    }
+  ],
+  "cities": [
+    {
+      "id": 1,
+      "name": "New York City, NY",
+      "timezone": "EST UTC-4"
+    },
+    {
+      "id": 2,
+      "name": "Seattle, WA",
+      "timezone": "PST UTC-7"
+    },
+    {
+      "id": 3,
+      "name": "Chicago, IL",
+      "timezone": "CST UTC-5"
+    },
+    {
+      "id": 4,
+      "name": "Nashville, TN",
+      "timezone": "CST UTC-5"
+    },
+    {
+      "id": 5,
+      "name": "Philadelphia, PA",
+      "timezone": "EST UTC-4"
+    },
+    {
+      "id": 6,
+      "name": "Las Vegas, NV",
+      "timezone": "PST UTC-7"
+    },
+    {
+      "id": 7,
+      "name": "Los Angeles, CA",
+      "timezone": "PST UTC-7"
+    },
+    {
+      "id": 8,
+      "name": "Washington, D.C",
+      "timezone": "EST UTC-4"
+    },
+    {
+      "id": 9,
+      "name": "Honolulu HI",
+      "timezone": "HST UTC-10:00"
+    },
+    {
+      "id": 10,
+      "name": "Boston, MA",
+      "timezone": "EST UTC-4"
+    }
+  ],
+  "airports": [
+    {
+      "id": 1,
+      "name": " John F.Kennedy International Airport",
+      "cityId": 1
+    },
+    {
+      "id": 2,
+      "name": "Newark Liberty International Airport",
+      "cityId": 1
+    },
+    {
+      "id": 3,
+      "name": "LaGuardia Airport",
+      "cityId": 1
+    },
+    {
+      "id": 4,
+      "name": "Logan International",
+      "cityId": 10
+    },
+    {
+      "id": 5,
+      "name": "Manchester Regional Airport",
+      "cityId": 10
+    },
+    {
+      "id": 6,
+      "name": "Worcester Regional Airport",
+      "cityId": 10
+    },
+    {
+      "id": 7,
+      "name": "Philadelphia International",
+      "cityId": 5
+    },
+    {
+      "id": 8,
+      "name": "Philadelphia Trenton-Mercer",
+      "cityId": 5
+    },
+    {
+      "id": 9,
+      "name": "North Philadelphia",
+      "cityId": 5
+    },
+    {
+      "id": 10,
+      "name": "Chicago O'Hare International",
+      "cityId": 3
+    },
+    {
+      "id": 11,
+      "name": "Chicago Midway Airport",
+      "cityId": 3
+    },
+    {
+      "id": 12,
+      "name": "Daniel K. Inouye International Airport",
+      "cityId": 9
+    },
+    {
+      "id": 13,
+      "name": "Hilo International Airport",
+      "cityId": 9
+    },
+    {
+      "id": 14,
+      "name": "Kona International Airport",
+      "cityId": 9
+    },
+    {
+      "id": 15,
+      "name": "Kahului Airport Maui",
+      "cityId": 9
+    },
+    {
+      "id": 16,
+      "name": "Harry Reid International Airport",
+      "cityId": 6
+    },
+    {
+      "id": 17,
+      "name": "North Las Vegas Airport",
+      "cityId": 6
+    },
+    {
+      "id": 18,
+      "name": "Boulder City Municipal",
+      "cityId": 6
+    },
+    {
+      "id": 19,
+      "name": "Nashville International Airport ",
+      "cityId": 4
+    },
+    {
+      "id": 20,
+      "name": "Seattle-Tacoma International Airport",
+      "cityId": 2
+    },
+    {
+      "id": 21,
+      "name": "Seattle Lake Union SPB",
+      "cityId": 2
+    },
+    {
+      "id": 22,
+      "name": "Seattle Boeing Field",
+      "cityId": 2
+    },
+    {
+      "id": 23,
+      "name": "Ronald Reagan Washington National Airport",
+      "cityId": 8
+    },
+    {
+      "id": 24,
+      "name": "Washington Dulles International Airport",
+      "cityId": 8
+    },
+    {
+      "id": 25,
+      "name": "Baltimore/Washington Thurgood Marshall International Airport",
+      "cityId": 8
+    },
+    {
+      "id": 26,
+      "name": "Los Angeles International Airport",
+      "cityId": 7
+    }
+  ],
+  "trip": [
+    {
+      "userId": 1,
+      "cityId": 5,
+      "tripName": "uu",
+      "notes": "uu",
+      "id": 21
+    },
+    {
+      "userId": 1,
+      "cityId": 3,
+      "tripName": "ghghgh",
+      "notes": "ghgghgh",
+      "id": 23
+    },
+    {
+      "cityId": 5,
+      "tripName": "jj",
+      "notes": "jj",
+      "id": 24
+    },
+    {
+      "userId": 1,
+      "cityId": 9,
+      "tripName": "Beach Vacation",
+      "notes": "Im going to land at hilo international airport on august 15th",
+      "id": 25
+    },
+    {
+      "userId": 6,
+      "cityId": 6,
+      "tripName": "Las Vegas Work Conference Trip",
+      "notes": "I'm going to a conference for steel manufacturers on the week of September 4th for the first three days of the week\n\nWe will at Harry Reid International Airport on the Sunday before, September 3rd, and check into our room at MGM Grand at 5:00 P.M\nDay 1: The conference will start at 8.00 A.M, and feature speakers throughout the day. It ends at 4:00P.M. Going to eat dinner at Off The Strip at 6:00\n\nTuesday, I will give my presentation at 1:00 after lunch. Will meet up with some friends at 7:00 to tour the strip.\n\nWednesday, I have a meeting with some executives at the 9 to talk about some cooperative arrangements we've been discussing. After the conference we'll have dinner at the L'Atelier at 7:00.\n\nThursday: Check out of my hotel room at 12:00, flight leaves from HRIA at 3:00 P.M back to Nashville",
+      "id": 27
+    },
+    {
+      "userId": 6,
+      "cityId": 2,
+      "tripName": "Seattle Sightseeing Trip",
+      "notes": "Booked a flight through Seattle Tacoma Airport on July 12th at 4:00 P.M.\n\nWe'll stay for 3 days, July 12-14th. We'll leave on the 15th at 6:00A.M\n\nOnce we land on the Wednesday we'll drive to our hotel at Hyett Regency and check in at 6:00P.M.\n\n\nOn Thursday we'll take the Mt. Rainier Day Tour. It starts at 7:AM. We're going to pack a light lunch. It should last until 3:00 or so. We'll head back to town and eat dinner.\n\nOn Friday we'll explore downtown and see the sights. In the morning we'll stop at the Seattle Aquarium until lunch, the we'll go on a tour of the Space Needle in the afternoon. We'll eat dinner at the Loupe Lounge in the space needle. *Make reservations for dinner at 5 P.M\n\nSaturday we'll check out at noon, then head back to the airport to catch our flight at SeaTac at 1:30P.M.\n",
+      "id": 28
+    },
+    {
+      "userId": 6,
+      "cityId": 1,
+      "tripName": "Meeting with Advance Manufacturers ",
+      "notes": "Date TBA\n\nShould be a quick day trip, roughly two months form now. Planning to discuss details of a possible deal to supply parts for their new manufacturing line. Most likely meeting with Ryan Pullman.\n",
+      "id": 29
+    }
+  ]
+}
